@@ -24,3 +24,23 @@ export type {
     RegisterCompletionOptions,
     CompletionRegistration,
 } from "./types/core";
+
+// Re-export from core for easier access
+export {
+  PROVIDERS,
+  MODEL_IDS,
+  PROVIDER_MODEL_MAP,
+  PROVIDER_ENDPOINT_MAP,
+  OpenRouterHandler,
+} from "@monacopilot/core";
+
+export type {
+  ProviderImplementationMap,
+  DeepSeekModel,
+  OpenRouterModel,
+  PickModel,
+  CompletionCreateParams,
+  OpenRouterCompletionCreateParams,
+  OpenRouterCompletion,
+  OpenRouterMessage,
+} from "@monacopilot/core";
